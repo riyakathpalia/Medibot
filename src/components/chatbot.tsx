@@ -1,12 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
-import "./compStyles.css";
-import botIcon from "../assets/react.svg";
+import React, { useEffect, useRef, useState } from "react";
 import arrowBackIcon from "../assets/arrow_back.svg"; // Use the back button icon
+import botIcon from "../assets/react.svg";
+import { Message } from "../types/ChatBotProps";
+import "./compStyles.css";
 
-interface Message {
-  sender: string;
-  content: string;
-}
 
 const ChatInterface: React.FC = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
